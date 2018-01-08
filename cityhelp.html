@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/cityHelp.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+
+    <script src="imgs.json"></script>
+</head>
+<body>
+<div class="wrap">
+    <!----导航栏部分----->
+    <div class="header">
+        <!-- 城市定位------->
+        <div class="navLeft">
+            <span class="city"><strong>深圳</strong><a href="#">[切换城市]</a></span><span><a href="#">同城帮首页</a></span>
+        </div>
+        <!----登录注册------>
+        <div class="navRight">
+            <ul>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">在线客服&nbsp</a><span>(9:00-21:00)</span></li>
+                <li class="five"><span>客服服务</span>
+                    <div class="sub">
+                        <a href="###">帮助中心</a><a href="###">维修付款</a>
+                    </div>
+                </li>
+                <li><a>论坛</a></li>
+                <li class="last"><a>投诉建议</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-----top-banner部分----->
+    <div class="topBanner">
+        <div class="topBannerLeft">
+            <a href="###" id="logo"></a>
+        </div>
+        <div class="topBannerRight">
+            <a href="###">二手优品<span class="hot"></span></a>
+            <a href="###">手机回收</a>
+            <a href="###">手机维修</a>
+            <a href="###">电脑维修</a>
+            <a href="###">以旧换新</a>
+            <a href="###">手机租用</a>
+        </div>
+    </div>
+    <!------banner部分----->
+    <div class="banner-wrap">
+        <div class="banner">
+            <div class="banner-imgs">
+                <!--<a href="###"><img src="imgs/banner1.jpg" alt=""></a>-->
+                <!--<a href="###"><img src="imgs/banner2.png" alt=""></a>-->
+
+            </div>
+            <!----指示器------>
+            <ul class="indicator">
+                <!--<li></li>
+                <li></li>
+                <li></li>-->
+            </ul>
+            <!-----轮播图上的内容----->
+            <div id="content-left">
+                <div class="content-list1">
+                    <div class="list-li">
+                        <img src="imgs/content-1.png"><a>修手机/pad</a><span></span>
+                    </div>
+                    <div class="small">
+                        <div class="small-left">
+                                <ul>
+                                    <li>屏幕 &gt</li>
+                                    <li>电池/充电/开机 &gt</li>
+                                    <li>按键 &gt</li>
+                                    <li>声音/震动 &gt</li>
+                                    <li>拍照/录相 &gt</li>
+                                    <li>外壳/边框 &gt</li>
+                                    <li>进水入液/主板故障 &gt</li>
+                                    <li>其它故障 &gt</li>
+                                    <li>个性化服务 &gt</li>
+                                </ul>
+                            </div>
+                        <div class="small-right">
+                                <ul>
+                                    <li><a><span>|</span>屏碎，但显示正常</a></li>
+                                    <li><a><span>|</span>屏幕不显示或花屏</a></li>
+                                    <li><a><span>|</span>屏幕触摸失灵</a></li>
+                                    <li><a><span>|</span>pad更换屏幕</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a><span>|</span>电池问题</a></li>
+                                    <li><a><span>|</span>不开机</a></li>
+                                    <li><a><span>|</span>充电（连接）问题</a></li>
+                                    <li><a><span>|</span>不开机</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a><span>|</span>开关机键失灵</a></li>
+                                    <li><a><span>|</span>Home键失灵</a></li>
+                                    <li><a><span>|</span>音量器失灵</a></li>
+                                    <li><a><span>|</span>pad更换屏幕</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li><a><span>|</span>听筒问题</a></li>
+                                    <li><a><span>|</span>麦克风问题</a></li>
+                                    <li><a><span>|</span>震动功能失效</a></li>
+                                    <li><a><span>|</span>耳机插口故障</a></li>
+                                    <li><a><span>|</span>音频问题</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li><a><span>|</span>后摄像头无法拍照</a></li>
+                                    <li><a><span>|</span>Home键失灵</a></li>
+                                    <li><a><span>|</span>音量器失灵</a></li>
+
+                                </ul>
+                                <ul>
+                                    <li><a><span>|</span>中框变形</a></li>
+                                    <li><a><span>|</span>手机换彩壳</a></li>
+
+                                </ul>
+                                <ul>
+                                    <li><a><span>|</span>进入水液</a></li>
+                                    <li><a><span>|</span>手机主板故障</a></li>
+
+                                </ul>
+                                <ul>
+                                    <li><a><span>|</span>软件升级/刷机</a></li>
+                                    <li><a><span>|</span>Wifi功能故障</a></li>
+                                    <li><a><span>|</span>音量器失灵</a></li>
+                                    <li><a><span>|</span>软件问题</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a><span>|</span>点亮Iponelogo</a></li>
+                                    <li><a><span>|</span>Home键失灵</a></li>
+                                    <li><a><span>|</span>音量器失灵</a></li>
+                                    <li><a><span>|</span>pad更换屏幕</a></li>
+                                    <li><a><span>|</span>手机换彩壳</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+                <div class="content-list1">
+                    <div class="list-li"><img src="imgs/content-2.png"><a>修电脑</a><span></span></div>
+                    <div class="small-two">
+                        <ul>
+                            <li style="border: none;width: 80px"><a>热门问题:</a></li>
+                            <li><a>系统重装</a></li>
+                            <li><a>电脑清灰</a></li>
+                            <li><a>VR/移动安装</a></li>
+                            <li><a>系统故障修复</a></li>
+                        </ul>
+                        <ul>
+                            <li style="border: none;width: 80px"></li>
+                            <li><a>系统重装</a></li>
+                            <li><a>电脑清灰</a></li>
+
+                        </ul>
+                        <ul>
+                            <li style="border: none;width: 80px"><a>其它问题:</a></li>
+                            <li><a>系统重装</a></li>
+                            <li><a>电脑清灰</a></li>
+                            <li><a>VR/移动安装</a></li>
+                            <li><a>系统故障修复</a></li>
+                        </ul>
+                        <ul>
+                            <li style="border: none;width: 80px"></li>
+                            <li><a>系统重装</a></li>
+                            <li><a>电脑清灰</a></li>
+                            <li><a>VR/移动安装</a></li>
+                            <li><a>系统故障修复</a></li>
+                        </ul>
+                        <ul>
+                            <li style="border: none;width: 80px"></li>
+                            <li><a>系统重装</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="content-list1">
+                    <div class="list-li"><img src="imgs/content-3.png"><a>卖手机/电脑</a><span></span></div>
+                    <div class="small-two">
+                        <ul>
+                            <li><a>热门问题:</a></li>
+                            <li><a>系统重装</a></li>
+                            <li><a>电脑清灰</a></li>
+                            <li><a>VR/移动安装</a></li>
+                            <li><a>系统故障修复</a></li>
+                        </ul>
+                        <ul>
+                            <li><a>三星</a></li>
+                            <li><a>系统重装</a></li>
+                            <li><a>电脑清灰</a></li>
+
+                        </ul>
+                        <ul>
+                            <li><a>其它问题:</a></li>
+                            <li><a>系统重装</a></li>
+                            <li><a>电脑清灰</a></li>
+                            <li><a>VR/移动安装</a></li>
+                            <li><a>系统故障修复</a></li>
+                        </ul>
+                        <ul>
+                            <li><a>苹果</a></li>
+                            <li><a>系统重装</a></li>
+                            <li><a>电脑清灰</a></li>
+                            <li><a>VR/移动安装</a></li>
+                            <li><a>系统故障修复</a></li>
+                        </ul>
+                        <ul>
+                            <li><a>小米</a></li>
+                            <li><a>系统重装</a></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+                 <div class="content-list1">
+                     <div class="list-li"><img src="imgs/content-4.png"><a>买二手机</a><span></span></div>
+                     <div class="small-two">
+                         <ul>
+                             <li style="border: none;width: 80px"><a>热门问题:</a></li>
+                             <li><a>系统重装</a></li>
+                             <li><a>电脑清灰</a></li>
+                             <li><a>VR/移动安装</a></li>
+                             <li><a>系统故障修复</a></li>
+                         </ul>
+                         <ul>
+                             <li style="border: none;width: 80px"></li>
+                             <li><a>系统重装</a></li>
+                             <li><a>电脑清灰</a></li>
+
+                         </ul>
+                         <ul>
+                             <li style="border: none;width: 80px"><a>其它问题:</a></li>
+                             <li><a>系统重装</a></li>
+                             <li><a>电脑清灰</a></li>
+                             <li><a>VR/移动安装</a></li>
+                             <li><a>系统故障修复</a></li>
+                         </ul>
+                         <ul>
+                             <li style="border: none;width: 80px"></li>
+                             <li><a>系统重装</a></li>
+                             <li><a>电脑清灰</a></li>
+                             <li><a>VR/移动安装</a></li>
+                             <li><a>系统故障修复</a></li>
+                         </ul>
+                         <ul>
+                             <li style="border: none;width: 80px"></li>
+                             <li><a>系统重装</a></li>
+                         </ul>
+
+
+                     </div>
+                 </div>
+            </div>
+
+        </div>
+    </div>
+    <!-------在线咨询------>
+    <div class="rightService">
+        <div class="shang"></div>
+        <a href="javascript:;" class="zhong"></a>
+        <div class="xia"></div>
+    </div>
+</div>
+<!----中间图片内容部分---->
+<div class="mainPhotoTop">
+    <div class="photoTop">
+        <img src="imgs/photo1.jpg" alt="">
+        <img src="imgs/photo2.jpg" alt="">
+        <img src="imgs/photo3.png" alt="">
+        <img src="imgs/photo4.jpg" alt="">
+    </div>
+</div>
+<!-----热门手机回收------>
+<div class="tit-wrap">
+    <div class="tit">
+        <h2>热门手机回收</h2>
+        <a href="javascript:;">查看更多</a>
+    </div>
+</div>
+<div class="host-phone-wrap">
+    <div class="cut">
+        <div class="host-phone">
+            <a href="javascript:;"></a>
+        </div>
+        <ul class="host-phone-list">
+            <li>
+                <a href="javascript:;">
+                    <div class="phone1-img">
+                        <img src="imgs/phone1.jpg" alt="">
+                    </div>
+                    <div class="p-name">苹果iPhone6</div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <div class="phone1-img">
+                        <img src="imgs/phone2.jpg" alt="">
+                    </div>
+                    <div class="p-name">苹果iPhone 5s</div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <div class="phone1-img">
+                        <img src="imgs/phone3.jpg" alt="">
+                    </div>
+                    <div class="p-name">小米& M4</div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <div class="phone1-img">
+                        <img src="imgs/phone4.jpg" alt="">
+                    </div>
+                    <div class="p-name">华为 Mate 7</div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <div class="phone1-img">
+                        <img src="imgs/phone5.jpg" alt="">
+                    </div>
+                    <div class="p-name">魅族 MX5</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!------优品精选------>
+<div class="tit-wrap">
+    <div class="tit">
+        <h2>优品精选</h2>
+        <a href="javascript:;">查看更多</a>
+    </div>
+</div>
+<div class="host-phone-wrap">
+    <div class="cut">
+        <div class="host-phone" id="youPin">
+            <a href="javascript:;"></a>
+        </div>
+        <ul class="host-phone-list">
+            <li>
+                <a href="javascript:;">
+                    <div class="phone1-img">
+                        <img src="imgs/youPhone1.jpg" alt="">
+                    </div>
+                    <div class="p-name">苹果 iPhone6 Plus</div>
+                    <div class="p-price">￥2599</div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <div class="phone1-img">
+                        <img src="imgs/youPhone2.jpg" alt="">
+                    </div>
+                    <div class="p-name">苹果 iPhone 7</div>
+                    <div class="p-price">￥4088</div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <div class="phone1-img">
+                        <img src="imgs/youPhone3.jpg" alt="">
+                    </div>
+                    <div class="p-name">华为 荣耀8青春版</div>
+                    <div class="p-price">￥1038</div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <div class="phone1-img">
+                        <img src="imgs/youPhone4.jpg" alt="">
+                    </div>
+                    <div class="p-name">小米 小米 Note 3</div>
+                    <div class="p-price">￥1799</div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <div class="phone1-img">
+                        <img src="imgs/youPhone5.jpg" alt="">
+                    </div>
+                    <div class="p-name">苹果 iPhone 7</div>
+                    <div class="p-price">￥4088</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-----到店维修----->
+<div class="tit-wrap">
+    <div class="tit">
+        <h2>到店维修</h2>
+    </div>
+</div>
+
+<!-----搜索下面的内容----->
+<div class="main-search-wrap">
+    <!-----左边部分-->
+    <div class="main-search-left">
+        <div class="main-top-search">
+            <div class="main-top-search-left">
+                <div><span>深圳</span><span class="xiao"></span></div>
+                <div><span>选择区县</span><span class="xiao" id="xiao"></span></div>
+            </div>
+            <div class="main-top-search-right">
+                <input type="text">
+                <button>搜索</button>
+            </div>
+        </div>
+        <div class="main-top-sort">
+            <div class="sort">
+                <a href="###">默认排序</a>
+                <a href="###">按成交量</a>
+                <a href="###">按人气</a>
+            </div>
+            <div class="check">
+                <label for="checkbox">
+                    <input type="checkbox" id="checkbox">&nbsp;先行赔付
+                </label>
+            </div>
+            <div>
+                <a href="###">地图模式</a>
+            </div>
+        </div>
+        <!-------->
+        <div class="shop-list">
+            <div class="shop-list-item">
+                <img src="" alt="" class="imgs">
+                <div class="shop-cont-list-left">
+                    <p><a href="###" class="shopa"></a>店铺等级：<a href="###" class="masonry"></a></p>
+                    <p class="mainyi">主营：电脑维修/笔记本清灰与维修/打印机维修/显示器维修</p>
+                    <p class="addr">地址：深圳龙华新区观澜街道大和路电子市场1FN01</p>
+                </div>
+                <div class="shop-cont-list-right">
+                    <p><span class="money"></span>先行赔付</p>
+                    <p><span class="true"></span>同城帮认证</p>
+                    <p class="visit">人气：22003次浏览</p>
+                </div>
+                <div class="indian">
+                    <a href="###">进入店铺</a>
+                </div>
+            </div>
+        </div>
+        <!---每页---->
+        <div class="pages">
+            <a href="###">首页</a>
+            <a href="###" class="next">《 上一页</a>
+            <a href="###" class="index">1</a>
+            <a href="###" class="index">2</a>
+            <a href="###" class="index">3</a>
+            <a href="###" class="index">4</a>
+            <a href="###" class="index">5</a>
+            <a href="###" class="index">6</a>
+            <a href="###" class="index">7</a>
+            <a href="###" class="index">8</a>
+            <a href="###" class="index">9</a>
+            <a href="###" class="index">10</a>
+            <a href="###" class="next">下一页 》</a>
+            <a href="###">尾页</a>
+        </div>
+    </div>
+    <!------右边部分----->
+    <div class="main-search-right">
+        <h3 class="title">商家好评榜</h3>
+        <div class="cont">
+            <div class="cont-list">
+                <div class="cont-num">①</div>
+                <img src="imgs/cont1.jpg" alt="">
+                <div class="cont-a">
+                    <a href="###">能帮科技</a>
+                    <p>1121条评论</p>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cont-list">
+                <div class="cont-num">②</div>
+                <img src="imgs/cont2.jpg" alt="">
+                <div class="cont-a">
+                    <a href="###">深圳市科瑞电脑有限公司</a>
+                    <p>823条评论</p>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cont-list">
+                <div class="cont-num">③</div>
+                <img src="imgs/cont3.jpg" alt="">
+                <div class="cont-a">
+                    <a href="###">深圳市联捷电脑科技</a>
+                    <p>737条评论</p>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cont-list">
+                <div class="cont-num4">④</div>
+                <img src="imgs/cont4.gif" alt="">
+                <div class="cont-a">
+                    <a href="###">启帆创通</a>
+                    <p>580条评论</p>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cont-list">
+                <div class="cont-num4">⑤</div>
+                <img src="imgs/cont5.jpg" alt="">
+                <div class="cont-a">
+                    <a href="###">神州数码深圳福田站</a>
+                    <p>563条评论</p>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cont-list">
+                <div class="cont-num4">⑥</div>
+                <img src="imgs/cont5.jpg" alt="">
+                <div class="cont-a">
+                    <a href="###">神州数码深圳华强北振</a>
+                    <p>481条评论</p>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cont-list">
+                <div class="cont-num4">⑦</div>
+                <img src="imgs/cont7.jpg" alt="">
+                <div class="cont-a">
+                    <a href="###">深圳佳振鑫电脑</a>
+                    <p>477条评论</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------footer部分---->
+<div class="footer-wrap">
+    <div class="footer-box">
+        <table class="footer-nav">
+            <tr>
+                <td>
+                    <span class="buy"></span>
+                    <div>
+                        <h3>购物指南</h3>
+                        <a href="###">购物流程</a>
+                        <a href="###">帮助文档</a>
+                    </div>
+                </td>
+                <td>
+                    <span class="buy" id="pay"></span>
+                    <div>
+                        <h3>支付方式</h3>
+                        <a href="###">在线支付、当面付款</a>
+                    </div>
+                </td>
+                <td>
+                    <span class="buy" id="serve"></span>
+                    <div>
+                        <h3>售后服务</h3>
+                        <a href="###">投诉建议</a>
+                        <a href="###">售后说明</a>
+                    </div>
+                </td>
+                <td>
+                    <span class="buy" id="join"></span>
+                    <div>
+                        <h3>商家合作</h3>
+                        <a href="###" class="join">加盟同城帮</a>
+                        <a href="###">新闻采访/跨界合作</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="link">
+        <p>客服电话：4000-399-360 / 010-53767360<a href="###">投诉建议</a><a href="###">网站地图</a></p>
+        <p>Copyright &copy; 2005-2017&nbsp;360.CN&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;360安全中心</p>
+        <p><a href="###">京ICP备08010314号-19号</a>&nbsp;&nbsp;&nbsp;&nbsp;京公网安备110000000006号</p>
+    </div>
+    <div class="goTo"></div>
+</div>
+<script type="text/javascript" src="js/cityHelp.js"></script>
+
+</body>
+</html>
